@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import { NavBar } from './components.js/Navbar';
 
 function App() {
+  const [active, setActive] = useState('About Us');
+  const [pages, setPages] = useState([
+    'About Us','Members','Our Partners', 'Online Services', 'Downloads'
+  ]);
+
+  const handleActive = (page)=>{
+    setActive(page);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1></h1>
+      <NavBar
+        handleActive ={(page)=>handleActive(page)}
+        menu = {pages}
+      />
+      <Section/> 
+    </>
   );
 }
 
