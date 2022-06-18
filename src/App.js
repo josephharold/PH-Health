@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { NavBar } from './components.js/Navbar';
+import { Section } from './components.js/Section';
+import { sections as sec} from './sections';
 
 function App() {
-  const [active, setActive] = useState('About Us');
+  const [active, setActive] = useState('Home');
   const [pages, setPages] = useState([
     'About Us','Members','Our Partners', 'Online Services', 'Downloads'
   ]);
@@ -18,7 +20,10 @@ function App() {
         handleActive ={(page)=>handleActive(page)}
         menu = {pages}
       />
-      <Section/> 
+      <Section
+        subSections={sec}
+        page= {active}
+      /> 
     </>
   );
 }
