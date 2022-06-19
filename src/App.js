@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { NavBar } from './components.js/Navbar';
-import { Section } from './components.js/Section';
-import { sections as sec} from './sections';
-
+import { NavBar } from './components/Navbar';
+import { Section } from './components/Section';
+import { sections as sec} from './section-contents/sections';
+import { Header } from './components/Header'; 
 function App() {
   const [active, setActive] = useState('Home');
   const [pages, setPages] = useState([
@@ -20,6 +20,9 @@ function App() {
         handleActive ={(page)=>handleActive(page)}
         menu = {pages}
       />
+      <Header
+        title = {active}
+      />      
       <Section
         subSections={sec}
         page= {active}
