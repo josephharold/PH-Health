@@ -3,6 +3,7 @@ import { NavBar } from './components/Navbar';
 import { Section } from './components/Section';
 import { sections as sec} from './section-contents/sections';
 import { Header } from './components/Header'; 
+import './index.css'
 function App() {
   const [active, setActive] = useState('Home');
   const [pages, setPages] = useState([
@@ -15,14 +16,17 @@ function App() {
 
   return (
     <>
-      <h1></h1>
+    <Header
+      title = {active}
+    />      
+    <div className="flex flex-row mx-5 justify-center">
+      <h1 className="">This is a header</h1>
+    </div>
       <NavBar
         handleActive ={(page)=>handleActive(page)}
         menu = {pages}
+        active={active}
       />
-      <Header
-        title = {active}
-      />      
       <Section
         subSections={sec}
         page= {active}

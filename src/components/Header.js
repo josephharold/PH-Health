@@ -1,5 +1,5 @@
 import React from 'react';
-
+import logo from '../assets/logo.png' ;
 
 
 const Header = (props)=>{
@@ -8,8 +8,10 @@ const Header = (props)=>{
 	}
 	return(
 		<>
-			<h1>this page is {props.title}</h1>
-			<img style={style} src="https://nerdist.com/wp-content/uploads/2020/07/maxresdefault.jpg" alt="" />
+		{/* to add onScroll event */}
+		<div className="flex flex-row justify-center py-10">
+			<img className="w-44" src={logo} alt="this logo" />
+		</div>
 		</>
 	)
 }

@@ -18,10 +18,10 @@ const Section = (props)=>{
 				/>
 	})
 	return(
-		<>
+		<div className="flex flex-col py-12 bg-green-5src\assets\vectorstock_28462917.png0">
 			<h1>{props.title}</h1>
 			{section}
-		</>
+		</div>
 	)
 }
 
