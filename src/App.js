@@ -4,6 +4,7 @@ import { Section } from './components/Section';
 import { sections as sec} from './section-contents/sections';
 import { Header } from './components/Header'; 
 import { SideBar } from './components/Navigation/SideBarNav/SideBar';
+import { BacktoTop } from './components/Navigation/BackToTop';
 import './index.css'
 function App() {
   const [active, setActive] = useState('Home');
@@ -40,6 +41,7 @@ function App() {
         subSections={sec}
         page= {active}
       /> 
+      <BacktoTop/>
     </>
   );
 }
