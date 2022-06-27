@@ -24,7 +24,7 @@ const sections = [
 	  page: 'About Us',
 	  subSections: [
 		{
-		  subtitle: 'Members',
+		  subtitle: 'ABOUT US PAGE Members',
 		  body : 'THE call to serve the rural indigents echoed since the early \'60s when the Philippine Medical Association introduced the MARIA Project which prioritized aid to communities in need of medical assistance.Agency \'s Mandate And Functions Vision, Mission, Core Values Board Of Directors'
 		},
 		{

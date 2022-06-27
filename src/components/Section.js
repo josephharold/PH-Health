@@ -18,7 +18,7 @@ const Section = (props)=>{
 				/>
 	})
 	return(
-		<div className="flex flex-col py-12 bg-green-50">
+		<div className="flex flex-col justify-start py-12 bg-green-50">
 			<h1>{props.title}</h1>
 			{section}
 		</div>
