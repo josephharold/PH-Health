@@ -12,10 +12,10 @@ const NavBar =(props)=>{
 	})
 	return(
 		<>
-		<div className="flex flex-row px-14 md:justify-center justify-start">
-			<div className="hidden md:flex md:flex-row md:justify-center">
+		<div className="hidden md:flex flex-row px-14 md:justify-center justify-start">
+			{/* <div className="hidden md:flex md:flex-row md:justify-center"> */}
 				{menu}
-			</div>
+			{/* </div> */}
 		</div>
 		</>	
 	)

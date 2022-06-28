@@ -6,12 +6,9 @@ const BacktoTop = (props)=>{
 	}
 	return(
 		<>
-			{/* adjust sizing*/}
-			{/* try to add feature such that button only displays if
-			 window.body-x-axis === certain point */}
 			<div className='fixed bottom-12 flex flex-row justify-end mx-12'>
-				<div onClick={()=>handleClick()}>
-					<BsFillArrowUpCircleFill size={40}></BsFillArrowUpCircleFill>
+				<div className='hover:scale-125 ease-in duration-100 cursor-pointer' onClick={()=>handleClick()}>
+					<BsFillArrowUpCircleFill size={35}></BsFillArrowUpCircleFill>
 				</div>
 			</div>
 		</>

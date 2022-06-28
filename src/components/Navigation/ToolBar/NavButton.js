@@ -4,8 +4,8 @@ import React from 'react';
 const NavButton = (props)=>{
 	let className="";
 	props.isActive === true ? 
-		className = "cursor-pointer py-2 mx-10 bg-green-50 px-12 rounded-t-lg sm:mx-1 sm: px-1 xs:mx-1 xs: px-1"  		
-		: className ="cursor-pointer py-2 mx-10 px-12 rounded-t-lg sm:mx-1 sm: px-1 xs:mx-1 xs: px-1"
+		className = "text-center cursor-pointer mx-5 bg-green-50 px-5 lg:py-5 rounded-t-lg"  		
+		: className ="text-center cursor-pointer mx-5 px-5 lg:py-5 rounded-t-lg"
 	return(
 		<div className={className} onClick={props.handleClick}><p>{props.title}</p></div>
 	)
